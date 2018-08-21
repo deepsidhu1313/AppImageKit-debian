@@ -1,0 +1,31 @@
+Source: appimage-kit
+Section: development
+Priority: extra
+Maintainer: Gajj Linux Developers <linuxgndu@gmail.com>
+Build-Depends: debhelper (>= 9), wget, vim, zsync, git, libarchive-dev, autoconf, libtool, make, gcc, g++, libtool, libfuse-dev, liblzma-dev, libglib2.0-dev, libssl-dev, libinotifytools0-dev, liblz4-dev, libcairo-dev, desktop-file-utils, cmake
+Standards-Version: 3.9.5.0
+Homepage: http://appimage.org
+Vcs-Browser: https://github.com/deepsidhu1313/AppImageKit.git
+
+Package: appimage-kit
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: AppImageKit is a concrete implementation of the AppImage format and provides tools such as appimagetool and appimaged for conveniently handling AppImages.
+
+appimagetool converts an AppDir into a self-mounting filesystem image. appimaged is a daemon that handles registering and unregistering AppImages with the system (e.g., menu entries, icons, MIME types, binary delta updates, and such).
+
+Providing an AppImage for distributing application has, among others, these advantages:
+
+Applications packaged as an AppImage can run on many distributions (including Ubuntu, Fedora, openSUSE, CentOS, elementaryOS, Linux Mint, and others)
+One app = one file = super simple for users: just download one AppImage file, make it executable, and run
+- No unpacking or installation necessary
+- No root needed
+- No system libraries changed
+- Works out of the box, no installation of runtimes needed
+- Optional desktop integration with appimaged
+- Optional binary delta updates, e.g., for continuous builds (only download the binary diff) using AppImageUpdate
+- Can optionally GPG2-sign your AppImages (inside the file)
+- Works on Live ISOs
+- Can use the same AppImages when dual-booting multiple distributions
+- Can be listed in the AppImageHub central directory of available AppImages
+- Can double as a self-extracting compressed archive with the --appimage-extract parameter
