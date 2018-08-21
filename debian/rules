@@ -5,7 +5,7 @@
 
 %:
 	# dh $@ --parallel
-	bash install-build-deps.sh
+	# bash install-build-deps.sh
 	bash build.sh
 
 #override_dh_auto_configure:
