@@ -1,5 +1,5 @@
 Source: appimage-kit
-Section: development
+Section: utils
 Priority: extra
 Maintainer: Gajj Linux Developers <linuxgndu@gmail.com>
 Build-Depends: debhelper (>= 9), wget, vim, zsync, git, libarchive-dev, autoconf, libtool, make, gcc, g++, libtool, libfuse-dev, liblzma-dev, libglib2.0-dev, libssl-dev, libinotifytools0-dev, liblz4-dev, libcairo-dev, desktop-file-utils, cmake
